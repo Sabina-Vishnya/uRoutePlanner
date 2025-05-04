@@ -1,0 +1,16 @@
+package com.example.urouteplanner.controller;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UserSettingRequest {
+    private long chatId;
+    private String username;
+    private String pointA;  //todo rename
+    private String pointB;  //todo rename
+    private String pointTime;  //todo rename
+}
