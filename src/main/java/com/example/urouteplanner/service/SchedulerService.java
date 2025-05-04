@@ -76,7 +76,8 @@ public class SchedulerService {
                     user.getUsername(),
                     user.getChatId(),
                     userArrivalTime,
-                    departureTime
+                    departureTime,
+                    routeDurationInSeconds
                 );
             }
         }
