@@ -70,7 +70,7 @@ public class SchedulerService {
             );
 
             if (isAlertTime(currentUserTimeZone, alertTime)) {
-                LocalTime departureTime = userArrivalTime.minusMinutes(routeDurationInSeconds);
+                LocalTime departureTime = userArrivalTime.minusSeconds(routeDurationInSeconds);
                 User user = userSetting.getUser();
                 notificationService.sendNotification(
                     user.getUsername(),
